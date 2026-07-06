@@ -1,0 +1,6 @@
+# جلوگیری از اجرای هرگونه اسکریپت در پوشه آپلودها (فقط دانلود فایل مجاز است)
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|pl|py|jsp|asp|aspx|sh|cgi|exe)$">
+    Require all denied
+</FilesMatch>
+Options -ExecCGI
+AddHandler cgi-script .php .phtml .php3 .php4 .php5 .pl .py .jsp .asp .aspx .sh .cgi
