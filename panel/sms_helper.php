@@ -20,7 +20,7 @@ if (!function_exists('normalize_kavenegar_phone')) {
 }
 
 // ارسال پیامک با استفاده از سرویس Lookup (الگوی از پیش تأییدشده) کاوه‌نگار
-// $tokens مثل ['token10' => 'نام', 'token20' => 'تاریخ', 'token3' => 'ساعت']
+// $tokens مثل ['token10' => 'نام', 'token20' => 'تاریخ', 'token' => 'ساعت']
 // خروجی: ['success' => bool, 'error' => string|null, 'raw' => array|null]
 if (!function_exists('send_kavenegar_lookup')) {
     function send_kavenegar_lookup($receptor, $template, $tokens = []) {
